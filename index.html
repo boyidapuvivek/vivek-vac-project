@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple HTML HomePage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;1,100;1,200;1,400&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+    *{
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color:white;
+    }
+
+    .header .logo {
+      font-size: 25px;
+      font-family:Arial, Helvetica, sans-serif;
+      color: #000;
+      text-decoration: none;
+      margin-left: 30px;
+    }
+
+    .nav-items {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f5f5f5;
+      margin-right: 20px;
+    }
+
+    .nav-items a {
+      text-decoration: none;
+      color: #000;
+      padding: 35px 20px;
+    }
+
+    
+    .intro {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 520px;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url(".//images/vizag2.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .intro h1 {
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 60px;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0;
+      text-shadow: #000;
+    }
+
+    .intro text{
+        position:static
+    }
+    .intro p {
+      font-size: 20px;
+      color: #d1d1d1;
+      font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      text-transform: uppercase;
+      margin: 20px 0;
+    }
+
+    .intro button {
+      background-color: #5edaf0;
+      color: #000;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4)
+    }
+    
+
+    .achievements {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 80px;
+    }
+
+    .achievements .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+    .achievements .work 
+    .achievements .work i {
+      width: fit-content;
+      font-size: 50px;
+      color: #333333;
+      border-radius: 50%;
+      border: 2px solid #333333;
+      padding: 12px;
+    }
+
+    .achievements .work .work-heading {
+      font-size: 20px;
+      color: #333333;
+      text-transform: uppercase;
+      margin: 10px 0;
+      box-shadow: 0px 0px 0px 0px rgba(rgba(0, 0, 0, 0.2));
+      
+    }
+    .achievements .work .work-heading::after{
+      width: 0%;
+      content: "";
+      height: 2px;
+      transition: 1s;
+    }
+  .achievements .work .work-heading:hover::after{
+    width: 90%;
+  }
+
+
+    .achievements .work .work-text {
+      font-size: 15px;
+      color: #585858;
+      margin: 10px 0;
+      text-align: justify;
+    }
+    .footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #302f49;
+      padding: 40px 80px;
+    }
+
+    .footer .copy {
+      color: #fff;
+    }
+
+    .bottom-links {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 40px 0;
+    }
+
+    .bottom-links .links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 40px;
+    }
+
+    .bottom-links .links span {
+      font-size: 20px;
+      color: #fff;
+      text-transform: uppercase;
+      margin: 10px 0;
+    }
+
+    .bottom-links .links a {
+      text-decoration: none;
+      color: #a1a1a1;
+      padding: 10px 20px;
+    }
+    .photo img{
+      width: 400px;
+      heigth: 500px;
+      margin-top: 50px;
+      margin-left: 37%;
+      object-fit: cover;
+      transition:1s ;
+    }
+    .photo img:hover{
+      transform: scale(1.1);
+    }
+
+  </style>
+</head>
+
+<body>
+  <header class="header">
+    <a href="#" class="logo">VIZAG</a>
+    <nav class="nav-items">
+      <a href="http://127.0.0.1:5501/index.html#">Home</a>
+      <a href="http://127.0.0.1:5501/students.html">Students</a>
+    </nav>
+  </header>
+  <main>
+    <div class="intro">
+      <h1>VIZAG-the city of destiny</h1>
+      <p class="text">Situated in the heart of Andhra Pradesh, Visakhapatnam is known for its picturesque beaches and serene landscape, as well as a rich cultural past, which makes it an ideal spot for a fantastic coastal vacation.
+    </p>
+    </div>
+    <div class="photo">
+      <img src=".//images/sports.jpg" alt="">
+  </div>
+  <div class="achievements">
+      <div class="work">
+          <p class="work-heading">sports</p>
+          <p class="work-text">Cricket is the most popular sport, followed by tennis and football. Visakhapatnam is home to a number of local cricket teams participating in district and zonal matches. Gully cricket (a form of cricket played in streets or parks) is a popular sport among local youth.[citation needed] Visakhapatnam co-hosted the 32nd National Games alongside Hyderabad in 2002. The city has seven cricket stadiums, which are used for Ranji Trophy matches; two of these stadiums have been used for one day international (ODI) matches. Indira Priyadarshini Stadium, also known as the Municipal Corporation Stadium, hosted the first ODI match on 9 December 1988 and the last ODI on 3 April 2001.[citation needed] The stadium has been discontinued in favour of the new Dr. Y. S. Rajasekhara Reddy International Cricket Stadium, PM Palem.[citation needed]
+
+            Dr. Y. S. Rajasekhara Reddy International Cricket Stadium is the home of Andhra Cricket Association. It regularly hosts Ranji Trophy, One Day Internationals and Test Internationals. The stadium is the home ground of Andhra cricket team. The stadium also hosted IPL matches as a neutral venue. It hosted its first test match against England beginning on 17 November 2016.[citation needed]
+            
+            Port Trust Golden Jubilee Stadium is the second largest stadium in Visakhapatnam, which has hosted Under-19 Youth Internationals. It also hosted the 2014 Pro Kabaddi League season as the home ground for the Telugu Titans.[189]Swarna Bharathi Indoor Stadium, built by the Greater Visakhapatnam Municipal Corporation, is used for various indoor sports,[190] and the GVMC Aqua Sports Complex, an aquatic centre for swimming and diving, is near the beach road.[191]
+            
+            Surfing activities are common at the Rushikonda beach.[192] Scuba diving at Chintapalli in the scenic city has been attracting tourists from all over.
+              
+          </p>
+      </div>
+  </div>
+  <div class="photo">
+      <img src=".//images/education.jpg" alt="">
+  </div>
+  <div class="achievements">
+      <div class="work">
+          <p class="work-heading">Education</p>
+          <p class="work-text">The primary and secondary school education is imparted by government, aided and private schools, under the School Education Department of the state.[168][169] As per the school information report for the academic year 2016–17, urban Visakhapatnam had 1,44,268 (Western: 144,268) students[170] enrolled in 434 schools.[171] The Central Board of Secondary Education, Secondary School Certificate or the Indian Certificate of Secondary Education are the different types of syllabus followed by different schools. The medium of instruction followed by schools are English and Telugu.[172] The St. Aloysius Anglo Indian Boys High School is the oldest school in the city to have established in the year 1847.[173] The Visakhapatnam District Central Library is supported by the government and is located at Dwaraka Nagar.[174][175]
+
+            There are tens of junior colleges under Government, Andhra Pradesh Social Welfare Residential and private undertakings.[176] Andhra University is the only autonomous college approved under Universities Grant Commission scheme.[177] Mrs. A. V. N. College is one of the oldest educational institution in the city.[150]: 35 
+            
+            The GITAM University and the Gayatri Vidya Parishad College of Engineering are other technical-education institutions in the city. Visakhapatnam is also home to Damodaram Sanjivayya National Law University (DSNLU), which is the National Law University for the state of Andhra Pradesh. DSNLU takes entrance through Common Law Admission Test and ranks 15th by order of establishment among the 17 National Law Universities. The city is due to get India's first packaging park[178] with an Indian Institute of Packaging, IIP[179] and BITS Pilani & Birla International School under the aegis of Sarala Birla Academy.[180]
+            
+            The Indian Maritime University (IMU) was established as a central university by the government of India by an act of Parliament (the Indian Maritime University Act 2008). IMU is poised to play a role in the development of human resources for the maritime sector. The city also has the National Institute of Oceanography. The Indian Institute of Management,[181] Indian Institute of Petroleum and Energy[182] are the other institutions of national importance.
+              
+          </p>
+      </div>
+  </div>
+  <div class="photo">
+    <img src=".//images/Bavikonda_stupas.jpg" alt="">
+</div>
+<div class="achievements">
+    <div class="work">
+        <p class="work-heading">History</p>
+        <p class="work-text">Visakhapatnam's history stretches back to the 6th century B.C.E. and the city finds mention in ancient texts such as the 4th century B.C.E. writings of Pāṇini and Katyayana. Historically considered part of the Kalinga region,. it was ruled by the Vengi kingdom and the Pallava and Eastern Ganga dynasties during medieval times.[24] Archaeological records suggest that the present city was built around the 11th and 12th centuries C.E. by the Chola dynasty king Kulothunga I. Control over the city fluctuated between the Chola dynasty of Tamil Nadu and the Gajapati Kingdom of Odisha  until its conquest by the Vijayanagara Empire in the 15th century.[24] European powers eventually set up trading interests in the city and Visakhapatnam came under French rule at the end of the 18th century. a
+
+            The city was ruled by the Andhra Kings of Vengi and Pallavas. The city is named after Sri Visakha Varma. Legend has it that Radha and Viśakha were born on the same day and were equally beautiful. Sri Visakka Sakhi is the second most important gopi of the eight main gopis. She carries messages between Radha and Krishna and is the most expert gopi messenger. Local residents believe that an Andhra king built a temple to pay homage to his family deity Viśakha. This is now inundated under sea water near R K Beach. Another theory is that it is named after a woman disciple of Buddha named Viśakha. Later it was ruled by Qutb Shahis (1571-1674), Kingdom of Jeypore (1535-1571) & (1674-1711), Mughal Empire (1711-1724), Nizam (1724–1757) and France (1757–1765) before being captured by the British in 1765. European powers eventually established trading operations in the city and Visakhapatnam came under French colonial rule at the end of the 18th century. a
+            
+            The British East India Company captured Visakhapatnam after the 1804 Battle of Vizagapatam and it remained under British colonial rule until Indian independence in 1947 which was a part of the Northern Circars.
+            
+        </p>
+    </div>
+</div>
+<div class="photo">
+  <img src=".//images/defence.jpg" alt="">
+</div>
+<div class="achievements">
+  <div class="work">
+      <p class="work-heading">Defence</p>
+      <p class="work-text">Visakhapatnam is the headquarters of the Eastern Naval Command, the Naval Science and Technological Laboratory (a DRDO Lab), a Chief Quality Assurance Establishment (CQAE), an EFS office, a Naval Dockyard (established in 1949) and Naval Bases including INS Virbahu, INS Karna, INS Kalinga, INS Samudrika, INS Satavahana, and INS Dega. A new base at INS Rambilli is being built on 5,000 acres (20 km2) with an investment of ₹15 billion (US$188 million), as the first dedicated nuclear submarine base in India.[183][184] India's first nuclear submarine INS Arihant was launched in the Naval Dockyard, and Bharat Dynamics has begun manufacturing torpedoes.[185] The city also has presence of the Indian Coast Guard including ships and offices. Multiple naval training establishments, such as the Navy ShipWright School,[186] are also situated here.
+          
+      </p>
+  </div>
+</div>
+  </main>
+  <footer class="footer">
+    <div class="copy">&copy; VAC PROJECT CSM-B</div>
+    <div class="bottom-links">
+      <div class="links">
+        <span>More Info</span>
+        <a href="http://127.0.0.1:5501/index.html#">Home</a>
+        <a href="http://127.0.0.1:5501/students.html">Students</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
